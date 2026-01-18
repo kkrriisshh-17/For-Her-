@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fdf2f2; /* Light pink background */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#cat-img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff4d6d; /* Pink text */
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative; /* Essential for positioning the 'No' button */
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#yes-btn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+#no-btn {
+    background-color: #ccc;
+    color: #333;
+    position: absolute; /* Allows JavaScript to move it */
+    left: 150px; /* Initial position relative to .buttons */
+}
+
+button:hover {
+    transform: scale(1.1);
+}
